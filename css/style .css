@@ -1,0 +1,207 @@
+/* ========= Common css start ========== */
+:root{
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "PT Sans", sans-serif;
+}
+body{
+    font-family: var(--primary-font);
+}
+h1,h2,h3{
+    font-family: var(--secondary-font)
+}
+h1,h2,h3,h4,h5,h6,ol,ul,span,small{
+    padding: 0;
+    margin: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+#primary_nav #primary_menu ul li a {
+    color: #353535;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: uppercase;
+    padding: 5px 28px;
+    margin-top:13px;
+    position: relative;
+}
+#primary_nav #primary_menu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #353535;
+    bottom: 0;
+    right: 0;
+    transition: .6s;
+}
+#primary_nav #primary_menu ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+#profile{
+    height: 887px;
+}
+#profile .row{
+    position: relative;
+}
+#profile .icon{
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+#profile .profile_info h4{
+    color: #353535;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#profile .profile_info h1{
+    color: #353535;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#profile .profile_info p{
+    padding: 26px 0;
+    color: #353535;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+}
+#profile .profile_info .anchor{
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: #FC0;
+    padding: 16px 0px 15px 32px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    margin: 77px 40px 77px 0;
+    font-weight: 600;
+    line-height: 180%;
+    transition: .5s;
+}
+#profile .profile_info .anchor i{
+    color: #FFF;
+    padding: 0px 33px 0px 19px;
+    transition: .5s;
+}
+#profile .profile_info .anchor:hover{
+    color: #000;
+    background: #FFF;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+#profile .profile_info li {
+    color: #353535;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    padding-right: 15px;
+}
+#profile .profile_info li a{
+    color: #000;
+    padding-left: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; 
+}
+#profile .profile_info li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #F4F3F3;
+}
+#profile .profile_img img{
+    width: 110%;
+    transform: translateY(-10%) translateX(13%);
+}
+footer{
+    background-image: url(./../image/footer_bg.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 71px 0 85px;
+}
+footer .footer_1 .col-lg-4 h2{
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%; 
+}
+footer .footer_1 .col-lg-4 p{
+    color: #BBB9B9;
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; 
+}
+footer .footer_1 .col-lg-4 .a{
+    border-radius: 16px;
+    background: #FC0;
+    padding: 16px 0px 15px 32px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+}
+footer .footer_1 .col-lg-4 .a i{
+    color: #FFF;
+    padding: 0px 33px 0px 19px;
+}
+footer .footer_1{
+    padding-bottom: 60px;
+}
+footer .footer_2 .col-lg-4 h6{
+    color: #BBB9B9;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; 
+}
+footer .footer_2 .col-lg-4 a{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+}
+footer .footer_2 .col-lg-4 li{
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; 
+}
+footer .footer_2 .col-lg-4 li a{
+    padding-left: 15px;
+}
+footer .footer_2 .col-lg-4 li a i{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #484848;
+}
+
